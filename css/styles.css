@@ -12,6 +12,33 @@ Stylesheet for countdownProject
 Author: Matt Parisano
 */
 
-div {
-    outline: 1px solid red;
+header, body, aside, footer, nav {
+    display:block;
+    outline: 2px solid red;
+}
+
+h1, h2, p {
+    outline: 1px dashed #77FF33;
+}
+
+img {
+ display:block;
+ outline: 1px dotted blue;
+}
+
+nav {
+    width:20%;
+    clear: both;
+    float: left;   
+}
+aside {
+    display:table;
+    float: right;
+}
+
+
+footer::after {
+    clear:both;
+    content:"";
+    display:table;
 }
