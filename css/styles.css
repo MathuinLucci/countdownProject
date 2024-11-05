@@ -12,6 +12,6 @@ Stylesheet for countdownProject
 Author: Matt Parisano
 */
 
-header, body, aside, footer{
-    outline: red solid 1px;
+div {
+    outline: 1px solid red;
 }
