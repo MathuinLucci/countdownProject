@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*@font-face {
+    font-family: Segment14;
+    src: url('../font/fontHere.woff') format('woff'),
+         url('../font/fontHere.ttf') format('truetype');
+ }
+*/
+
+/*
+Stylesheet for countdownProject
+Author: Matt Parisano
+*/
+
+header, body, aside, footer{
+    outline: red solid 1px;
+}
