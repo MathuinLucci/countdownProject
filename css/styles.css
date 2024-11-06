@@ -70,7 +70,8 @@ li {
 
 
 /*
-images go in the aside box. Matt, quit trying to figure out why they go there. YOU put them there in the HTML. Stop forgetting that
+images go in the aside box. Matt, quit trying to figure out why they go there. YOU put them there in the HTML. Stop forgetting that.
+You also removd them from the aside element and put them in with the h2. Delete this bs later
 */
 
 aside {
