@@ -15,16 +15,26 @@ Stylesheet for countdownProject
 Author: Matt Parisano
 */
 
+/*html style*/
 
-/*temp code to visualize where each container is*/
+html {
+    background: url(../img/nycStreet.png);
+    background-size: cover;
+}
+
+/*temp code using outlines to visualize where each container is*/
 
 header, body, section, aside, footer, nav {
-    display:block;
+    display:table;
     outline: 2px solid red;
 }
 
+body {
+    padding:70px;
+}
+
 /*
-h1 is the main dealio at the top of the page, h2 is each point, h3 is the details of each point. No, I didn't use the h3 tag, why do you ask?
+Green outline. h1 is the main dealio at the top of the page, h2 is each point, h3 is the details of each point. No, I didn't use the h3 tag, why do you ask?
 */
 h1, h2, p {
     outline: 1px dashed #77FF33;
@@ -35,12 +45,17 @@ Image layout. Duh.
 Also outline
 */
 img {
- display:block;
  outline: 1px dotted blue;
 }
 
 h1 {
     font-size: 3em;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #e0ba4e95;
+
 }
 
 /*
@@ -49,14 +64,24 @@ Idc, it's going over there anyway unless I
 feel like it looks better somewhere else
 */
 nav {
+    background-color: #2DE0B4cc;
     width:20%;
+    min-height:100%;
     clear: left;
     float: left;   
     display:block;
 }
 
+section {
+    background-color: #E1792Ebf;
+    display:block;
+    width:80%;
+    clear:right;
+    float:right;
+}
+
 /*
-nav category styles
+li styles
 CSS selectors be damned. 
 I used <b></b> in the HTML to bold the UL.
 Fight me.
@@ -73,13 +98,6 @@ li {
 images go in the aside box. Matt, quit trying to figure out why they go there. YOU put them there in the HTML. Stop forgetting that.
 You also removd them from the aside element and put them in with the h2. Delete this bs later
 */
-
-aside {
-    display:table;
-    float: right;
-}
-
-
 
 /*
 Putting the footer at the bottom using the ::after pseudo code
