@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-/*@font-face {
+/*
+placeholder font stuff
+
+@font-face {
     font-family: Segment14;
     src: url('../font/fontHere.woff') format('woff'),
          url('../font/fontHere.ttf') format('truetype');
@@ -12,33 +15,77 @@ Stylesheet for countdownProject
 Author: Matt Parisano
 */
 
-header, body, aside, footer, nav {
+
+/*temp code to visualize where each container is*/
+
+header, body, section, aside, footer, nav {
     display:block;
     outline: 2px solid red;
 }
 
+/*
+h1 is the main dealio at the top of the page, h2 is each point, h3 is the details of each point. No, I didn't use the h3 tag, why do you ask?
+*/
 h1, h2, p {
     outline: 1px dashed #77FF33;
 }
 
+/*
+Image layout. Duh.
+Also outline
+*/
 img {
  display:block;
  outline: 1px dotted blue;
 }
 
+h1 {
+    font-size: 3em;
+}
+
+/*
+Does the nav bar NEED to be on the left?
+Idc, it's going over there anyway unless I
+feel like it looks better somewhere else
+*/
 nav {
     width:20%;
-    clear: both;
+    clear: left;
     float: left;   
+    display:block;
 }
+
+/*
+nav category styles
+CSS selectors be damned. 
+I used <b></b> in the HTML to bold the UL.
+Fight me.
+P.S. Thanks, Christian
+*/
+
+li {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/*
+images go in the aside box. Matt, quit trying to figure out why they go there. YOU put them there in the HTML. Stop forgetting that
+*/
+
 aside {
     display:table;
     float: right;
 }
 
 
+
+/*
+Putting the footer at the bottom using the ::after pseudo code
+*/
+
 footer::after {
     clear:both;
-    content:"";
     display:table;
+    content:"";
 }
