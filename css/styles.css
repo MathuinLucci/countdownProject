@@ -38,7 +38,27 @@ section {
     float:right;
 }
 
+/*Link color styles*/
 
+a {
+    color:#00f;
+    text-decoration:none;
+}
+
+a:visited {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0f0;
+    text-decoration: underline;
+}
+
+a:active {
+    color:#ff0;
+    text-decoration: underline;
+}
 
 /*
 Green outline. h1 is the main dealio at the top of the page, h2 is each point, h3 is the details of each point. No, I didn't use the h3 tag, why do you ask?
