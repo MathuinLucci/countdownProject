@@ -1,8 +1,8 @@
 "use strict" ;
 /*
 Original code from Review 9
-Copy/Pasted by Matt Parisano
-11/06//2024
+Copied, Pasted, and edited by Matt Parisano
+11/06/2024
 
 Original credit:
          Taylor P, Christian H, Matt. P
@@ -20,9 +20,9 @@ function showClock() {
    var localTime = thisDay.toLocaleTimeString(); 
 
    document.getElementById("currentTime").innerHTML =
-   "<span>" + localDate + "</span><span>" + localTime + "</span>";
+   "<span>" + localDate + "</span> <span>" + localTime + "</span>";
 
-   var vacayDate = nextJuly4(thisDay);
+   var vacayDate = newDate("December 22, 2024");
    vacayDate.setHours(21);
 
    var days = (vacayDate - thisDay)/(1000*60*60*24);
