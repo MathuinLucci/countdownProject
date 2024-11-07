@@ -20,9 +20,9 @@ function showClock() {
    var localTime = thisDay.toLocaleTimeString(); 
 
    document.getElementById("currentTime").innerHTML =
-   "<span>" + localDate + "</span> <span>" + localTime + "</span>";
+   "<span>" + localDate + "</span><span>" + localTime + "</span>";
 
-   var vacayDate = newDate("December 22, 2024");
+   var vacayDate = nextJuly4(thisDay);
    vacayDate.setHours(21);
 
    var days = (vacayDate - thisDay)/(1000*60*60*24);
@@ -35,4 +35,13 @@ function showClock() {
    document.getElementById("mLeft").textContent = Math.floor(mins);
    document.getElementById("sLeft").textContent = Math.floor(secs);
 
+}
+
+function nextJuly4(currentDate) 
+{
+   var cYear = currentDate.getFullYear();
+   var vacayDate = new Date("December 22, 2024");
+  vacayDate.setFullYear(cYear);
+   if ((vacayDate - currentDate) < 0) vacayDate.setFullYear(cYear + 1);
+   return vacayDate;
 }
