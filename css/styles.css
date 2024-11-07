@@ -30,6 +30,16 @@ body {
     height:100vh;
 }
 
+header {
+    background-image: url(../img/nycHeader.png);
+    background-size: cover;
+}
+
+header > * {
+    color: #e5e8e8;
+    align-items: ;
+}
+
 section {
     background-color: #E1792Ebf;
     display:block;
@@ -41,12 +51,12 @@ section {
 /*Link color styles*/
 
 a {
-    color:#00f;
+    color:#000;
     text-decoration:none;
 }
 
 a:visited {
-    color: #000;
+    color: #e5e8e8;
     text-decoration: underline;
 }
 
