@@ -30,18 +30,34 @@ body {
     height:100vh;
 }
 
-header {
-    background-image: url(../img/nycHeader.png);
-    background-size: cover;
+header, body, section, aside, footer, nav {
+    display:table;
+    outline: 2px solid red;
 }
 
-header > * {
+header {
+    background-image: url(../img/nycHeader.png);
+}
+
+/*text and body styles*/
+
+header {
     color: #e5e8e8;
-    align-items: ;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.1em;
 }
 
 section {
+    color:#e5e8e8;
     background-color: #E1792Ebf;
+    text-align: center;
     display:block;
     width:80%;
     clear:right;
@@ -56,7 +72,7 @@ a {
 }
 
 a:visited {
-    color: #e5e8e8;
+    color: #F90D00;
     text-decoration: underline;
 }
 
@@ -70,34 +86,13 @@ a:active {
     text-decoration: underline;
 }
 
-/*
-Green outline. h1 is the main dealio at the top of the page, h2 is each point, h3 is the details of each point. No, I didn't use the h3 tag, why do you ask?
-*/
-h1, h2, p {
-    outline: 1px dashed #77FF33;
-}
 
 header, footer {
     width: 100%;
     background-color: #e0ba4e95;
     
 }
-/*
-temp code using outlines to visualize where each container is
-*/
 
-header, body, section, aside, footer, nav {
-    display:table;
-    outline: 2px solid red;
-}
-
-/*
-Image layout. Duh.
-Also outline
-*/
-img {
- outline: 1px dotted blue;
-}
 
 h1 {
     font-size: 3em;
@@ -109,6 +104,7 @@ Does the nav bar NEED to be on the left?
 Idc, it's going over there anyway unless I
 feel like it looks better somewhere else
 */
+
 nav {
     background-color: #2DE0B4cc;
     width:20%;
@@ -132,12 +128,6 @@ li {
     text-decoration: underline;
     font-style: italic;
 }
-
-
-/*
-images go in the aside box. Matt, quit trying to figure out why they go there. YOU put them there in the HTML. Stop forgetting that.
-You also removed them from the aside element and put them in with the h2. Delete this bs later
-*/
 
 /*
 Putting the footer at the bottom using the ::after pseudo code
