@@ -19,41 +19,65 @@ Creative Commons (by) Attribution
 html {
     background: url(../img/nycStreet.png);
     background-size: cover;
-}
+    background-attachment: fixed;
+}    
 
 body {
-    padding:15px 25px;
-    margin:0px;
+    height: 100%;
+    min-height: 800px;
     display: flex;
+    padding:25px;
     justify-content: center;
     align-items:center;
-    height:100vh;
-}
+}    
 
 header, body, section, aside, footer, nav {
     display:table;
     outline: 2px solid red;
-}
+}    
 
 header {
     background-image: url(../img/nycHeader.png);
-}
+    background-size: cover;
+    color: #e5e8e8;
+}            
+
+header, footer {
+    width: 100%;
+    background-color: #e0ba4e95;
+    text-align: center;    
+}        
 
 /*text and body styles*/
 
-header {
-    color: #e5e8e8;
-    text-align: center;
-}
+h1 {
+    font-size: 3em;
+}            
 
 h2 {
     font-size: 2em;
+}        
+
+/*
+Does the nav bar NEED to be on the left?
+Idc, it's going over there anyway unless I
+feel like it looks better somewhere else
+*/
+
+body > nav {
+    background-color: #2DE0B4cc;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    width:20%;
+    clear:left;
+    float:left;
 }
 
 p {
     font-size: 1.1em;
 }
-
+    
 section {
     color:#e5e8e8;
     background-color: #E1792Ebf;
@@ -62,58 +86,31 @@ section {
     width:80%;
     clear:right;
     float:right;
-}
+}        
 
 /*Link color styles*/
 
 a {
     color:#000;
     text-decoration:none;
-}
+}        
 
 a:visited {
     color: #F90D00;
     text-decoration: underline;
-}
+}        
 
 a:hover {
     color: #0f0;
     text-decoration: underline;
-}
+}        
 
 a:active {
     color:#ff0;
     text-decoration: underline;
-}
+}        
 
 
-header, footer {
-    width: 100%;
-    background-color: #e0ba4e95;
-    
-}
-
-
-h1 {
-    font-size: 3em;
-}
-
-
-/*
-Does the nav bar NEED to be on the left?
-Idc, it's going over there anyway unless I
-feel like it looks better somewhere else
-*/
-
-nav {
-    background-color: #2DE0B4cc;
-    width:20%;
-    min-height:100%;
-    clear: left;
-    float: left;   
-    display:block;
-    box-sizing:border-box;
-}
 
 
 /*
@@ -125,6 +122,7 @@ P.S. Thanks, Christian
 */
 
 li {
+    list-style-type: disc;
     text-decoration: underline;
     font-style: italic;
 }
