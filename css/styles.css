@@ -25,13 +25,14 @@ header {
     color: #e5e8e8;
 }    
 
-body {
+body {    
+    outline: 5px dashed white;
     height: 100%;
     min-height: 800px;
+    max-height:1920px;
     display: flex;
     padding:25px;
     justify-content: center;
-    align-items:center;
 }    
 
 section {
@@ -39,7 +40,7 @@ section {
     background-color: #E1792Ebf;
     text-align: center;
     display:block;
-    width:80%;
+    width:83%;
     clear:right;
     float:right;
 }            
@@ -99,7 +100,7 @@ h2 {
 p {
     font-size: 1.1em;
 }    
-    
+
 /*Link styles*/
 
 a {
