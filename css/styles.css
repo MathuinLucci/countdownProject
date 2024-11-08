@@ -14,16 +14,14 @@ Author: Matt Parisano
 /*html style*/
 
 html {
+    display:flexbox;
     background: url(../img/nycStreet.png);
     background-size: cover;
     background-attachment: fixed;
+    min-width: 800px;
+    min-height: 800px;
 }    
 
-header {
-    background-image: url(../img/nycHeader.png);
-    background-size: cover;
-    color: #e5e8e8;
-}    
 
 body {    
     outline: 5px dashed white;
@@ -33,13 +31,20 @@ body {
     display: flex;
     padding:25px;
     justify-content: center;
+}
+
+header {
+    background-image: url(../img/nycHeader.png);
+    background-size: cover;
+    color: #e5e8e8;
 }    
 
 section {
     color:#e5e8e8;
     background-color: #E1792Ebf;
     text-align: center;
-    display:block;
+    display:flex;
+    height:33.333%;
     width:83%;
     clear:right;
     float:right;
@@ -48,12 +53,23 @@ section {
 nav {
     background-color: #2DE0B4cc;
     display: flex;
-    flex: 1 1 auto;
+    height:100%;
     flex-direction: column;
     width:17%;
     clear:left;
     float:left;
 }    
+
+header, footer {
+    width: 100%;
+    background-color: #e0ba4e95;
+    text-align: center;    
+}            
+
+header, body, section, aside, footer, nav {
+    display:table;
+    outline: 1px solid red;
+}
 
 /*
 li styles
@@ -69,16 +85,6 @@ li {
     font-style: italic;
 }
 
-header, footer {
-    width: 100%;
-    background-color: #e0ba4e95;
-    text-align: center;    
-}            
-
-header, body, section, aside, footer, nav {
-    display:table;
-    outline: 1px solid red;
-}        
 
 /*
 Does the nav bar NEED to be on the left?
