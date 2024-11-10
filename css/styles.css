@@ -49,7 +49,6 @@ nav {
     display: 1 1 flex;
     flex-direction: column;
     width:16%;
-    align-items: left;
     clear:left;
     float:left;
 }    
@@ -100,16 +99,14 @@ footer {
 }
 
 #currentTime {
-    text-shadow: #fff 3px 0px 2px , #fff -3px 0px 2px , #fff 0px 3px 2px , #fff 0px -3px 2px;
+    text-align: left;
+    text-shadow: #e5e8e8 1px 0px 2px , #e5e8e8 -1px 0px 2px , #e5e8e8 0px 1px 2px , #e5e8e8 0px -1px 2px;
 }
 
-#currentTime {
-    text-align: left;
-}
 
 #eventDate {
     text-align: center;
-    text-shadow: #fff 3px 0px 2px , #fff -3px 0px 2px , #fff 0px 3px 2px , #fff 0px -3px 2px;
+    text-shadow: #e5e8e8 2px 0px 2px , #e5e8e8 -2px 0px 2px , #e5e8e8 0px 2px 2px , #e5e8e8 0px -2px 2px;
     font-size: 1.75em;
 }
 
@@ -145,13 +142,12 @@ feel like it looks better somewhere else
 
 h1 {
     font-size: 2.75em;
-    text-shadow: #fff 3px 0px 2px , #fff -3px 0px 2px , #fff 0px 3px 2px , #fff 0px -3px 2px;
-    display: flex 1 1 auto;
+    text-shadow: #e5e8e8 3px 0px 3px , #e5e8e8 -3px 0px 3px , #e5e8e8 0px 3px 3px , #e5e8e8 0px -3px 3px;
 }                
 
 h2 {
     font-family: 'h2';
-    text-shadow: #fff 1px 1px 0px , #fff -1px -1px 0px;
+    text-shadow: #e5e8e8 1px 0px 0px , #e5e8e8 -1px -0px 0px, #e5e8e8 0px 1px 0px , #e5e8e8 0px -1px 0px;
     background: #ffffff1A;
     font-size: 2em;
 }            
