@@ -16,7 +16,7 @@ Author: Matt Parisano
 */
 
 header, section, footer, nav {
-    outline: 1px solid red;
+    outline: 2px solid #ff0000;
 }
 
 /*html style*/
@@ -65,10 +65,14 @@ section {
 }            
 
 img {
+    box-sizing: border-box;
+    margin:6px;
     position:relative;
     display: 1 1 flex;
     float: right;
     max-width: 41%;
+    outline: 2px solid #ff0000;
+    transform: translate(0px, -2px)
 }
 
 
@@ -90,8 +94,12 @@ footer {
 .countdown{
     display:flex;
     justify-content: center;
-    column-gap:1em
+    column-gap:1em;
+    background-color: #ffffffb3;
+}
 
+#currentTime {
+    text-shadow: #ffffff ;
 }
 
 /*.box {
@@ -119,9 +127,6 @@ I used <b></b> in the HTML to bold the UL.
 Fight me.
 P.S. Thanks, Christian
 */
-
-ul {/}
-}
 
 li {
     font-size: 2.5vh;
@@ -156,6 +161,8 @@ h2 {
 
 
 p {
+    box-sizing: border-box;
+    padding: 10px;
     font-size: 1.1em;
 }    
 
@@ -187,6 +194,6 @@ Putting the footer at the bottom using the ::after pseudo element
 
 footer::after {
     clear:both;
-    display:block;
+    display:table;
     content:"";
 }
