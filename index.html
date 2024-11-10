@@ -15,15 +15,23 @@
         
     <body>
         <header>
-            <h1>Countdown to NYC</h1>
-            <div id="currentTime"><span></span><span></span></div>
-            <div id="countdown">
-                <div><span id="dLeft"></span> Days</div>
-                <div><span id="hLeft"></span> Hours</div>
-                <div><span id="mLeft"></span> Minutes</div>
-                <div><span id="sLeft"></span> Seconds</div>
-             </div>    
+        
+            <div id="currentTime"> 
+                <!--text from countdown code gets instered here because it finds the id "currentTime" and inputs the HTML code + the data values calculated  by the showClock function-->   
+            </div>
+
+        <h1>Countdown to NYC</h1>
+            <div id="eventDate">
+                12/22/2024
+            </div>
+
+            <br />
             
+            <div class=countdown id="countdown">
+                Only <div class=box> <span id="dLeft"></span></div> DAYS,
+                <div class=box><span id="hLeft"></span></div> HOURS,
+                <div class=box><span id="mLeft"></span></div> MINUTES, and
+                <div class=box  ><span id="sLeft"></span></div> SECONDS left!
         </header>
 
         <nav>

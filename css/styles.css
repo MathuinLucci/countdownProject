@@ -40,15 +40,15 @@ header {
     font-family: "header";
     display:flex;
     background-image: url(../img/nycHeader.png);
-    background-size: contain;
-    color: #e5e8e8;
+    text-shadow: #fff 0 0 19px;
 }    
 
 nav {
-    background-color: #2DE0B4cc;
+    background-color: #2897fccc;
     display: 1 1 flex;
     flex-direction: column;
-    width:16%;
+    max-width:16%;
+    align-items: left;
     clear:left;
     float:left;
 }    
@@ -59,8 +59,7 @@ section {
     display: 1 1 flex;
     text-align: center;
     flex-direction: column;
-    height:100%;
-    width:84%;
+    max-width:84%;
     clear:right;
     float:right;
 }            
@@ -88,6 +87,30 @@ footer {
     position: relative;
 }
 
+.countdown{
+    display:flex;
+    justify-content: center;
+    column-gap:1em
+
+}
+
+/*.box {
+ width:75px;
+ height:35px;
+ background-color:#fa9146bf;
+ outline: 5px double #ff0000;
+ font-size: 2em;
+ border-radius: 8px;
+}*/
+
+#currentTime {
+    text-align: left;
+}
+
+#eventDate {
+    text-align: center;
+    font-size: 1.75em;
+}
 
 /*
 li styles
@@ -96,6 +119,9 @@ I used <b></b> in the HTML to bold the UL.
 Fight me.
 P.S. Thanks, Christian
 */
+
+ul {/}
+}
 
 li {
     font-size: 2.5vh;
@@ -115,11 +141,16 @@ feel like it looks better somewhere else
 /*text and body styles*/
 
 h1 {
-    font-size: 3em;
+    font-size: 2.75em;
+    text-shadow: #e8f2fa 0px 0px 17px;
+    background: #ffffff0A;
+    display: flex 1 1 auto;
 }                
 
 h2 {
     font-family: 'h2';
+    text-shadow: #e8f2fa 0px 0px 22px;
+    background: #ffffff1A;
     font-size: 2em;
 }            
 

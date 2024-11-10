@@ -20,7 +20,7 @@ function showClock() {
    var localTime = thisDay.toLocaleTimeString(); 
 
    document.getElementById("currentTime").innerHTML =
-   "<span>" + localDate + "</span><span>" + localTime + "</span>";
+   "<span>" + localDate + "</span> <br /> <span>" + localTime + "</span>";
 
    var vacayDate = nextJuly4(thisDay);
    vacayDate.setHours(21);
