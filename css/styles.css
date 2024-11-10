@@ -1,9 +1,13 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: Snickles;
-    src: url('../font/placeholder.ttf') format('truetype'),
-    url('../font/placeholder.woff') format('woff');
+    font-family: "header";
+    src: url('../font/SixtyfourConvergence-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: "h2";
+    src: url('../font/BungeeTint-Regular.ttf') format('truetype');
 }
 
 /*
@@ -11,65 +15,79 @@ Stylesheet for countdownProject
 Author: Matt Parisano
 */
 
+header, section, footer, nav {
+    outline: 1px solid red;
+}
+
 /*html style*/
 
 html {
-    display:flexbox;
     background: url(../img/nycStreet.png);
     background-size: cover;
     background-attachment: fixed;
-    min-width: 800px;
-    min-height: 800px;
+    min-width: 700px;
+    display:block;
 }    
 
 
-body {    
-    outline: 5px dashed white;
+body {
+    font-family: body;
     height: 100%;
-    min-height: 800px;
-    max-height:1920px;
-    display: flex;
     padding:25px;
-    justify-content: center;
 }
 
 header {
+    font-family: "header";
+    display:flex;
     background-image: url(../img/nycHeader.png);
-    background-size: cover;
+    background-size: contain;
     color: #e5e8e8;
 }    
 
-section {
-    color:#e5e8e8;
-    background-color: #E1792Ebf;
-    text-align: center;
-    display:flex;
-    height:33.333%;
-    width:83%;
-    clear:right;
-    float:right;
-}            
-
 nav {
     background-color: #2DE0B4cc;
-    display: flex;
-    height:100%;
+    display: 1 1 flex;
     flex-direction: column;
-    width:17%;
+    width:16%;
     clear:left;
     float:left;
 }    
 
+section {
+    color:#e5e8e8;
+    background-color: #fa9146bf;
+    display: 1 1 flex;
+    text-align: center;
+    flex-direction: column;
+    height:100%;
+    width:84%;
+    clear:right;
+    float:right;
+}            
+
+img {
+    position:relative;
+    display: 1 1 flex;
+    float: right;
+    max-width: 41%;
+}
+
+
 header, footer {
     width: 100%;
     background-color: #e0ba4e95;
-    text-align: center;    
+    text-align: center;
+    display:table;
 }            
 
-header, body, section, aside, footer, nav {
-    display:table;
-    outline: 1px solid red;
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: relative;
 }
+
 
 /*
 li styles
@@ -80,6 +98,8 @@ P.S. Thanks, Christian
 */
 
 li {
+    font-size: 2.5vh;
+    word-wrap: normal;
     list-style-type: disc;
     text-decoration: underline;
     font-style: italic;
@@ -99,6 +119,7 @@ h1 {
 }                
 
 h2 {
+    font-family: 'h2';
     font-size: 2em;
 }            
 
@@ -135,6 +156,6 @@ Putting the footer at the bottom using the ::after pseudo element
 
 footer::after {
     clear:both;
-    display:table;
+    display:block;
     content:"";
 }
